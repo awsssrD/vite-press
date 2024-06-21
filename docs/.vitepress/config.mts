@@ -5,7 +5,12 @@ export default defineConfig({
   title: "My Awesome Project",
   description: "A VitePress Site",
   srcDir: "src",
-  "base":"/vite-press/",
+  base: "/vite-press/",
+  markdown: {
+    image: {
+      lazyLoading: true,
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
